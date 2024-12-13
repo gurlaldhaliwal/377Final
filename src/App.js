@@ -1,3 +1,5 @@
+//Already installed react-router which is one library so we only need one more JS library to install or use for creativity.
+
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";

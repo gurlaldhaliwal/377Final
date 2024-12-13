@@ -1,0 +1,23 @@
+Front End - 100pts
+Front end accesses data fully through FetchAPI data loads
+Minimum 3 Fetch Calls
+1 from External API (from API List from Proposal)
+2 from Backend API’s that were designed
+Front end is styled using contemporary CSS, including appropriate use of flexbox or grids
+Front end styles appear similar on all contemporary desktop browsers
+Front End must use 2 Javascript Libraries
+This can be any libraries
+Suggestions: Charting Libraries (Chart JS), Picture Slider, Anything be creative!
+Minimum 3 application pages:
+Home Page
+About Page
+Project Specific Functionality Page
+This is core functionality for your application, this should likely use a Rest API, and the JS Library
+
+
+Back End - 50pts
+Successful connection to external data source - Specifically a Supabase Database
+2 API end-points you have authored, which:
+1 Must Retrieve Data from your database
+1 Can either Write Data to your DB or Can get data from some external provider and manipulate it in some manner
+BOTH of these API’s MUST be used by the Front-End
