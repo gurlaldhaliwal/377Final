@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.css";
+import RegisterForm from "../components/registerForm";
+
 
 const Home = () => {
   return (
@@ -11,6 +13,7 @@ const Home = () => {
         <div className="content-box middle-box-left">*Placeholder*</div>
         <div className="content-box middle-box-right">*Placeholder*</div>
         <div className="content-box bottom-box">*Placeholder*</div>
+        <RegisterForm></RegisterForm>
       </section>
     </div>
   );

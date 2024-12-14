@@ -1,5 +1,4 @@
 import React from "react";
-import "./PlayerCard.css";
 
 const PlayerCard = ({ player }) => {
   if (!player) return <div className="player-card">No player selected</div>;

@@ -11,9 +11,11 @@ const Compare = () => {
   useEffect(() => {
     const fetchPlayers = async () => {
       
-      let { data, error } = await supabase
+      let { data } = await supabase
       .from('players')
       .select('id, player_name, field_percent, points, assists')
+
+      setPlayers(data);
     };
 
     fetchPlayers();
@@ -27,13 +29,11 @@ const Compare = () => {
   return (
     <div>
       <h1>Compare Players or Teams</h1>
-
       <p>Use the tools below to compare your favorite NBA players or teams.</p>
 
       <section className="content-grid">
 
         <div className="content-box top-box">
-
           <div className="player-selector">
 
             <label htmlFor="playerOne">Player 1:</label>
@@ -51,11 +51,9 @@ const Compare = () => {
             </select>
 
           </div>
-
           <PlayerCard player={playerOne} />
 
         </div>
-
         <div className="content-box bottom-box">
 
           <div className="player-selector">
@@ -75,13 +73,11 @@ const Compare = () => {
             </select>
 
           </div>
-
           <PlayerCard player={playerTwo} />
 
         </div>
-
       </section>
-      
+
     </div>
   );
 };
