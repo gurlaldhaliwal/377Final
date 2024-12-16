@@ -14,15 +14,12 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 app.use(cors());
 app.use(express.json());
 
-// Serve static files from the React frontend build directory
-app.use(express.static(path.join(__dirname, 'frontend/build')));
+app.use(express.static(path.join(__dirname, 'frontend')));
 
-// Serve the React app on the root route
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
 });
 
-// Function to fetch and store player data
 async function fetchAndStorePlayerData() {
     try {
         const response = await fetch('http://b8c40s8.143.198.70.30.sslip.io/api/PlayerDataTotals/season/2024');
@@ -40,7 +37,7 @@ async function fetchAndStorePlayerData() {
                 team, season, playerId,
             } = player;
 
-            // Insert or update player data in Supabase
+            
             await supabase
                 .from('players')
                 .upsert([{
@@ -84,7 +81,6 @@ async function fetchAndStorePlayerData() {
     }
 }
 
-// Route to register users
 app.post('/api/register-user', async (req, res) => {
     const { name, email } = req.body;
 
@@ -107,7 +103,6 @@ app.post('/api/register-user', async (req, res) => {
     }
 });
 
-// Route to test API is working
 app.get('/api/players', async (req, res) => {
     try {
         const { data, error } = await supabase
