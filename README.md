@@ -1,7 +1,7 @@
 # NBA Stats
 
 # Team Member Names:
-Gurlal Dhaliwal, Enrique Coronado, 
+Gurlal Dhaliwal, Enrique Coronado, Jackson Brunner, Anthony Le
 
 ## Project Description
 NBA Stats is an interactive web application that allows users to explore and compare NBA players for the 2024 season. With a focus on statistics, the application enables basketball enthusiasts to analyze player statistics and matchups.
