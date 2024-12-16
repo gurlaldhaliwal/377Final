@@ -1,6 +1,6 @@
 # NBA Stats
 
-# Team Names:
+# Team Member Names:
 Gurlal Dhaliwal, 
 
 ## Project Description
